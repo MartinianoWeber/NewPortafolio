@@ -1,0 +1,133 @@
+.sobremi{
+    display: flex;
+    justify-content:center;
+}
+.background__sobremi{
+    margin-top: 5rem;
+    background-color: rgb(0, 0, 0);
+    width: 1000px;
+    height:600px;
+    border-radius: 10px;
+        h2{
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 3.5rem;
+        }
+}
+
+.sobremi__texto{
+    font-size:1.6rem;
+    width: 850px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.7rem;
+    border-top: 1px solid rgb(10, 80, 121);
+    border-bottom: 1px solid blue;
+    border-radius: 1rem;
+}
+
+
+.aboutme--p {
+  background-color: #000000;
+  border: 2px solid #6724F3;
+  border-radius: 10rem;
+  padding: 0.7rem 1.8rem;
+}
+
+.contentprincipal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content__principal1 {
+  align-self: stretch;
+  justify-self: center;
+  width: 350px;
+}
+.content__principal1  {
+    .content__titulo{
+        color: #F8F8F8;
+        font-size: 2.8rem;
+        background-color: #000000;
+        border: 2px solid #2D46B9;
+        border-radius: 1rem;
+        margin-top: 2rem;
+    }
+
+}
+.content__principal1 {
+    .contenidoprincipal1 {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+
+}
+.content__principal1   {
+    .contenidoprincipal1{
+        .content--nacionalidad1{
+        color: #23c5ca;
+
+        }
+    }
+}
+
+.content__principal2 {
+  align-self: stretch;
+  justify-self: center;
+  width: 350px;
+}
+.content__principal2 .content__titulo {
+  color: #F8F8F8;
+  font-size: 2.8rem;
+  background-color: #000000;
+  border: 2px solid #2D46B9;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contenidoprincipal2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-rows: repeat(2, 1fr);
+}
+.contenidoprincipal2 img {
+  height: 50px;
+  width: 50px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: #ef32d9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+
+
+}
+.contenidoprincipal2 p {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.btn__group{
+  display:flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.btns{
+  display:flex;
+  img{
+    width: 150px;
+    height:100px;
+  }
+  button{
+    width: 150px;
+    margin-left: -15rem;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+  }
+}

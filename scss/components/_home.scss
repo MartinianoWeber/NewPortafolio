@@ -1,0 +1,295 @@
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+    overflow: hidden;
+}
+@keyframes cambiar{
+    0%{background-position: 0, 100%;}
+    50%{background-position: 100%, 50%;}
+    100%{background-position: 0, 50%;}
+}
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header_nav h1{
+    color: #fff;
+    font-family: 'Gagalin';
+}
+
+.header_nav nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.banner_title h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner_title .llamanos{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px;
+}
+
+.banner_img{
+    margin-top: 3rem;
+    animation: movimiento 2.5s linear infinite;
+    img{
+        width: 250px;
+        height: 250px;
+        display: block;
+    }
+}
+
+
+/* burbujas */
+.rayos{
+    position: absolute;
+    top: -7rem;
+    right: -15rem;
+}
+
+.rayo{
+    
+    /* opacity: .3; */
+ 
+    position: absolute;
+    bottom: -150;
+    
+    /* animation: burbujas 3s linear infinite ; */
+}
+
+/* Copy this @keyframes block to your CSS*/
+@keyframes yourAnimation {
+    0.0%{
+        transform: rotate(50deg) translate(100px, 600px);
+    }
+    100%{
+        transform: rotate(50deg) translate(110px, 1200px);
+    }
+}
+
+/* Add the animation: property to whichever element you want to animate */
+.rayo{
+    animation: yourAnimation 80s ease 0s infinite normal none;
+
+}
+.rayo:nth-child(1){
+    
+    width: 80px;
+    height: 80px;
+    right: 5rem;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.rayo:nth-child(2){
+    width: 100px;
+    height: 100px;
+    right: -14rem;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.rayo:nth-child(3){
+    width: 20px;
+    height: 20px;
+    right: -5rem;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+.rayo:nth-child(4){
+    width: 50px;
+    height: 50px;
+    right: 10rem;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.rayo:nth-child(5){
+    width: 70px;
+    height: 70px;
+    right: -10rem;
+    animation-duration: 5s;
+    animation-delay: 4s;
+}
+
+.rayo:nth-child(6){
+    width: 20px;
+    height: 20px;
+    right: -5rem;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.rayo:nth-child(7){
+    width: 20px;
+    height: 20px;
+    right: 4rem;
+    animation-duration: 5s;
+    animation-delay: 6s;
+}
+
+.rayo:nth-child(8){
+    width: 100;
+    height: 100px;
+    right: -27rem;
+    animation-duration: 5s;
+    animation-delay: 7s;
+}
+
+.rayo:nth-child(9){
+    width: 65px;
+    height: 65px;
+    right: -14rem;
+    animation-duration: 5s;
+    animation-delay: 8s;
+}
+
+.rayo:nth-child(10){
+    width: 40px;
+    height: 40px;
+    right:4rem;
+    animation-duration: 5s;
+    animation-delay: 9s;
+}
+
+
+@keyframes rayos{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.main__textos{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.main__texto2{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        margin-top: 1rem;
+        a{
+            margin-top: 1rem;
+            padding: 0.5rem 3rem;
+            border-radius: .5rem;
+            border: none;
+            cursor: pointer;
+            background-color: $violetaBoton;
+            color: white;
+        }
+    }
+  
+}
+
+.main__texto3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: solid 1px rgb(8, 45, 255);
+    border-bottom: solid 1px rgb(255, 8, 243);
+    border-radius: 2rem;
+    padding: .2rem 2rem;
+        p{
+            font-size: 1.5rem;
+        }
+}
+
+.texto3__img{
+    display: flex;
+    gap: 2rem;
+
+    img{
+        width: 70px;
+        height: 70px;
+        filter: drop-shadow(0px 2px 1px rgb(0, 0, 0));
+    }
+}
+
+.f__sig{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    img{
+        width: 150px;
+        height:100px;
+    }
+}
+
+.boton{
+    width: 168px;
+    height: 97px;
+    margin-left: -16rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

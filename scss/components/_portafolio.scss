@@ -1,0 +1,132 @@
+.portafolio{
+    display: flex;
+    justify-content:center;
+}
+.background__portafolio{
+    background-image: url(../img/background4.png);
+    background-position: center center;
+    margin-top:5rem;
+    width: 1200px;
+    height:600px;
+    border-radius: 10px;
+        h2{
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 3.5rem;
+            filter: drop-shadow(.5px 0px 1px rgb(255, 0, 242));
+        }
+}
+
+
+.content3__grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    margin: auto;
+    row-gap: 2rem;
+    margin-top: 2rem;
+  }
+  .content3__grid img {
+    border-radius: 3rem;
+    width: 320px;
+    height: 180px;
+  }
+  
+  .caja__proyecto {
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0px 2px 1px rgb(255, 0, 200));
+    width: 320px;
+    border-radius: 3rem;
+  }
+  
+  .caja__texto {
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 320px;
+    height: 180px;
+    border-radius: 3rem;
+    transition: 1s;
+  }
+  
+  .caja__proyecto:hover .caja__texto {
+    top: 0%;
+    transition: 1s;
+  }
+  
+  .caja__boton {
+    font-size: 1.5rem;
+    font-style: none;
+    color: #F8F8F8;
+    background-color: #6724F3;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    transition: 1s;
+  }
+  
+  .caja__repositorio {
+    background-color: #6724F3;
+    align-items: center;
+    border-radius: 2rem;
+  }
+  
+  .caja__icono {
+    width: 28px !important;
+    height: 28px !important;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .caja__boton:hover {
+    color: #000000;
+    transition: 1s;
+  }
+  
+  .caja__proyecto1:hover .caja__icono {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .caja__titulo {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+  
+  .caja__parrafo {
+    font-size: 1.2rem;
+  }
+
+  .centrado{
+      display: flex;
+      justify-content: center;
+  }
+
+  .flex{
+      display: flex;
+
+  }
+
+
+  .direcciones{
+      display: flex;
+      justify-content: center;
+      gap: 20rem;
+      width: 600px;
+    margin: auto;
+      filter: drop-shadow(-5px 2px 1px rgb(0, 0, 0));
+      a{
+        color: #ffd900;
+        font-size:5rem;
+        filter: drop-shadow(5px 0px 1px rgb(255, 0, 200));
+      }
+
+  }
+
+  .btn__group--portafolio{
+      margin-top:-5rem;
+  }

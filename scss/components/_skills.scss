@@ -1,0 +1,124 @@
+.skills{
+    display: flex;
+    justify-content:center;
+}
+
+.background__skills{
+    margin-top: 1rem;
+    background-color: rgb(0, 0, 0);
+    width: 1200px;
+    height:680px;
+    border-radius: 10px;
+        h2{
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 3.5rem;
+        }
+}
+
+.skills__group{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.5rem;
+    img{
+        width: 80px;
+        height: auto;
+    }
+    h3{
+        text-align: center;
+        font-size: 2.3rem;
+    }
+}
+
+.subrayadoSkills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:280px;
+    margin: auto;
+    margin-top:2rem;
+    border-bottom: 1px solid $rojoLine;
+    p{
+        font-size:2rem;
+    }
+}
+.subrayadoSkills:hover  .font__valor{
+    color: white;
+    filter: drop-shadow(0px 2px 1px rgb(0, 183, 255));
+}
+
+.font__valor{
+    font-size:1.5rem !important;
+    color:rgb(148, 121, 121);
+      
+}
+
+.subrayadoSkillsBlandas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:280px;
+    margin: auto;
+    margin-top:2rem;
+    border-bottom: 1px solid $rojoLine;
+    p{
+        font-size:2rem;
+    }
+}
+
+.resume{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 600px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.resume__item {
+    display:flex;
+    margin: auto;
+    gap: 1rem;
+    padding: 0 0 20px 5px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+.resume__item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;}
+
+    .resume__item:last-of-type{
+        padding-bottom: 0;
+    }
+    .resume__año{
+        background-color: rgba(5, 248, 208, 0.603);
+    }
+    .resume__item:nth-child(1) {
+        .resume__año{
+
+            margin-left: 6rem;
+        }
+    }
+    .resume__item:nth-child(2) {
+        .resume__año{
+            margin-left: 5.2rem;
+        }
+    }
+    .resume__item:nth-child(3) {
+        .resume__año{
+            margin-left: 3rem;
+        }
+    }
+
+    .btn__group--skills{
+        margin-top:1rem;
+    }
